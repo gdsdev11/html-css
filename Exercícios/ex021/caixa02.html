@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="github.ico" type="image/x-icon">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(212, 212, 212);
+        }
+
+        nav{
+            background-color: rgb(212, 7, 0);
+            padding: 2px;
+            box-shadow: 6px 6px 7px 1px rgba(0, 0, 0, 0.397);
+        }
+
+        nav > a{
+            text-decoration: none;
+            padding-right: 100px;
+            color: white;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+        header{
+            background-color: rgba(82, 189, 189, 0.541);
+            padding: 10px;
+        }
+
+        section{
+            background-color: rgba(64, 145, 145, 0.541);
+            padding: 10px;
+            text-align: justify;
+        }
+
+        aside{
+            background-color: rgba(43, 95, 95, 0.541);
+        }
+
+        section > p{
+            font-weight: bold;
+            font-size: x-large;
+            color: rgb(5, 82, 197)
+        }
+
+        section > p::before{
+            content: '●';
+            color: rgb(0, 89, 255);
+        }
+
+        footer{
+            background-color: rgb(212, 7, 0);
+            text-align: center;
+            color: white;
+            padding: 3px;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+        
+        main > section#redondo{
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 6px 3px 6px 4px rgba(0, 0, 0, 0.384);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Site de Exemplo</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum amet consequuntur voluptatem magni, architecto natus molestiae aliquam eligendi, corrupti ea assumenda nam labore velit delectus quod repudiandae sint! Quisquam, voluptate?</p>
+
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a> 
+        </nav>
+    </header>
+    
+    <main>
+        <section id="redondo">
+            <p>Esportes</p>
+            <article>
+                <h2>Natação</h2>
+                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ad nihil earum. Laborum natus odio magnam recusandae quidem animi aut, nisi dolorem, omnis eligendi esse autem illum suscipit voluptas blanditiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ullam possimus dicta, ut dolore neque iusto accusamus sint reiciendis, tenetur amet esse consectetur! Aliquam iure repellat ab laudantium inventore rerum!</p>
+                <aside>
+                    <p>Quem disse isso foi o Craque Neto</p>
+                </aside>
+            </article>
+        </section>
+
+        <section>
+            <p>Política</p>
+            <article>
+                <h2>No Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, ex blanditiis iusto dolorum quaerat quis, itaque quos commodi, deleniti doloremque animi sequi nam distinctio asperiores facilis nulla saepe officia? Maxime! Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis maiores tempore autem possimus fugit beatae consequatur, ut numquam. Nihil, dicta laborum ullam exercitationem recusandae maiores at minima repudiandae esse eos.</p>
+                <aside>
+                    <p>Quem disse isso foi Lulinha</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Ganabz</p>
+    </footer>
+</body>
+</html>
