@@ -14,13 +14,25 @@
             border-collapse: collapse;
         }
 
+        caption {
+            font-size: 1.em;
+            font-weight: bolder;
+            padding: 10px;
+            background-color: rgb(177, 176, 176);
+        }
+        
+        
+        tbody > tr:nth-child(even) {
+            background-color: lightgrey;
+        }
+        
         td, th {
             border: 1px solid black;
             padding: 10px;
         }
 
         th, tfoot {
-            background-color: gray;
+            background-color: rgba(0, 0, 0, 0.705);
             color: white;
         }
 
@@ -32,9 +44,10 @@
 <body>
     <h1>Trabalhando com Tabelas Grandes</h1>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col" >Estado</th>
+            <th scope="col" style="width: 100px;" >População</th>
         </thead>
         <tbody>
             <tr>
@@ -147,7 +160,7 @@
             </tr>
         </tbody>
         <tfoot>
-            <th>Total</th>
+            <th scope="row" >Total</th>
             <td class="num" ><strong>212.583.750</strong></td>
         </tfoot>
     </table>
